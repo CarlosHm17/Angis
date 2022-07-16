@@ -5,23 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)">
     <link rel="stylesheet" href="./desktop.css" media="screen and (min-width: 800px)">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT US</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">GALLERY</a></li>
-                <li><a href="">CAREERS</a></li>
-                <li><a href="">EVENTS</a></li>
-                <li><a href="">OUR LOCATIONS</a></li>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li>HOME</li></a>
+                <a href="#"><li>ABOUTS</li></a>
+                <a href="#"><li>MENU</li></a>
+                <a href="#"><li>GALERRY</li></a>
+                <a href="#"><li>CAREERS</li></a>
+                <a href="#"><li>EVENTS</li></a>
+                <a href="#"><li>OUR LOCATIONS</li></a>
               </ul>
-        </nav>
+            </div>
+          </nav>
         <div class="header_Background"></div>
     </header>
     <main>
@@ -33,14 +58,14 @@
                 </p>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="main_text_descripcion">
+            <di class="main_text_container_descripcion">
                 <p>Angie’s charms the curious and conscious taster with uncommon ice cream 
                     and epicurean delights. We believe the experience of taste is best savored with 
                     the experience of beauty. As so, our gourmet confections are constructed from 
                     the finest organic, plant-based ingredients and purveyed in an environment of 
                     exquisite style and design.</p>
-            </div>
+            </di>
         </section>
     </main>
 </body>
